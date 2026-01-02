@@ -7,8 +7,8 @@ Documentation     A resource file with reusable keywords and variables.
 Library           SeleniumLibrary
 
 *** Variables ***
-${SERVER}         127.0.0.1:50867
-${BROWSER}        Firefox
+${SERVER}         localhost:7272/Lab4
+${BROWSER}        Chrome
 ${DELAY}          0
 ${VALID USER}     demo
 ${VALID PASSWORD}    mode
@@ -23,7 +23,7 @@ Open Browser To Register Page
     Login Page Should Be Open
 
 Login Page Should Be Open
-    Title Should Be    Event Registration
+    Title Should Be    Registration
 
 Go To Login Page
     Go To    ${REGISTER URL}
