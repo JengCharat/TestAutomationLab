@@ -26,7 +26,7 @@ except ImportError:
     from http.server import SimpleHTTPRequestHandler, HTTPServer
 
 
-ROOT = join(dirname(abspath(__file__)), 'StarterFiles')
+ROOT = join(dirname(abspath(__file__)), './')
 PORT = 7272
 
 
