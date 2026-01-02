@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.0 on darwin)" generated="2026-01-02T21:31:40.873844" rpa="false" schemaversion="5">
+<suite id="s1" name="Register Page" source="/Users/jengcharat/Desktop/soften/TestAutomationLab/register_page.robot">
+<test id="s1-t1" name="Valid Login" line="6">
+<kw name="Open Browser To Register Page" owner="resource">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-01-02T21:31:40.996201" level="INFO">Opening browser 'Firefox' to base url 'http://127.0.0.1:50867/Registration.html'.</msg>
+<msg time="2026-01-02T21:31:46.260169" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-01-02T21:31:46.260563" level="FAIL">WebDriverException: Message: Reached error page: about:neterror?e=connectionFailure&amp;u=http%3A//127.0.0.1%3A50867/Registration.html&amp;c=UTF-8&amp;d=Firefox%20%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B8%96%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%A1%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B9%84%E0%B8%9B%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B9%80%E0%B8%8B%E0%B8%B4%E0%B8%A3%E0%B9%8C%E0%B8%9F%E0%B9%80%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%97%E0%B8%B5%E0%B9%88%20127.0.0.1%3A50867
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+UnknownError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:961:5
+checkReadyState@chrome://remote/content/marionette/navigate.sys.mjs:59:24
+onNavigation@chrome://remote/content/marionette/navigate.sys.mjs:348:39
+emit@resource://gre/modules/EventEmitter.sys.mjs:156:19
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.sys.mjs:33:25
+</msg>
+<arg>${REGISTER URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="FAIL" start="2026-01-02T21:31:40.996050" elapsed="5.267300">WebDriverException: Message: Reached error page: about:neterror?e=connectionFailure&amp;u=http%3A//127.0.0.1%3A50867/Registration.html&amp;c=UTF-8&amp;d=Firefox%20%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B8%96%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%A1%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B9%84%E0%B8%9B%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B9%80%E0%B8%8B%E0%B8%B4%E0%B8%A3%E0%B9%8C%E0%B8%9F%E0%B9%80%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%97%E0%B8%B5%E0%B9%88%20127.0.0.1%3A50867
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+UnknownError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:961:5
+checkReadyState@chrome://remote/content/marionette/navigate.sys.mjs:59:24
+onNavigation@chrome://remote/content/marionette/navigate.sys.mjs:348:39
+emit@resource://gre/modules/EventEmitter.sys.mjs:156:19
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.sys.mjs:33:25
+</status>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" start="2026-01-02T21:31:46.263687" elapsed="0.000028"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="NOT RUN" start="2026-01-02T21:31:46.263777" elapsed="0.000014"/>
+</kw>
+<kw name="Login Page Should Be Open" owner="resource">
+<status status="NOT RUN" start="2026-01-02T21:31:46.263932" elapsed="0.000021"/>
+</kw>
+<status status="FAIL" start="2026-01-02T21:31:40.995613" elapsed="5.268434">WebDriverException: Message: Reached error page: about:neterror?e=connectionFailure&amp;u=http%3A//127.0.0.1%3A50867/Registration.html&amp;c=UTF-8&amp;d=Firefox%20%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B8%96%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%A1%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B9%84%E0%B8%9B%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B9%80%E0%B8%8B%E0%B8%B4%E0%B8%A3%E0%B9%8C%E0%B8%9F%E0%B9%80%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%97%E0%B8%B5%E0%B9%88%20127.0.0.1%3A50867
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+UnknownError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:961:5
+checkReadyState@chrome://remote/content/marionette/navigate.sys.mjs:59:24
+onNavigation@chrome://remote/content/marionette/navigate.sys.mjs:348:39
+emit@resource://gre/modules/EventEmitter.sys.mjs:156:19
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.sys.mjs:33:25
+</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2026-01-02T21:31:46.264188" elapsed="0.000016"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-01-02T21:31:46.264375" elapsed="0.624849"/>
+</kw>
+<status status="FAIL" start="2026-01-02T21:31:40.995279" elapsed="5.894055">WebDriverException: Message: Reached error page: about:neterror?e=connectionFailure&amp;u=http%3A//127.0.0.1%3A50867/Registration.html&amp;c=UTF-8&amp;d=Firefox%20%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B8%AA%E0%B8%B2%E0%B8%A1%E0%B8%B2%E0%B8%A3%E0%B8%96%E0%B8%AA%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%A1%E0%B8%95%E0%B9%88%E0%B8%AD%E0%B9%84%E0%B8%9B%E0%B8%A2%E0%B8%B1%E0%B8%87%E0%B9%80%E0%B8%8B%E0%B8%B4%E0%B8%A3%E0%B9%8C%E0%B8%9F%E0%B9%80%E0%B8%A7%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%97%E0%B8%B5%E0%B9%88%20127.0.0.1%3A50867
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:202:5
+UnknownError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:961:5
+checkReadyState@chrome://remote/content/marionette/navigate.sys.mjs:59:24
+onNavigation@chrome://remote/content/marionette/navigate.sys.mjs:348:39
+emit@resource://gre/modules/EventEmitter.sys.mjs:156:19
+receiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.sys.mjs:33:25
+</status>
+</test>
+<doc>A test suite with a single test for valid login.</doc>
+<status status="FAIL" start="2026-01-02T21:31:40.874863" elapsed="6.014925"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Register Page" id="s1" pass="0" fail="1" skip="0">Register Page</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
