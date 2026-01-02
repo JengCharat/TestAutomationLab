@@ -10,7 +10,7 @@ Valid Login
     Sleep    1s
     Input Lastname    Sodsai
     Sleep    1s
-    Input Email    somsri@kkumail.com
+    Input Email    somyod@kkumail.com
     Sleep    1s
     Input Phone    091-001-1234
     Sleep    1s
